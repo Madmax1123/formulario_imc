@@ -71,13 +71,7 @@ function validaFruta(Fruta){
         erros.push("O nome não pode estar em branco!");
     }
 
-    if(!validaValor(Fruta.Valor)){
-       erros.push("Valor é inválido!");
-    }
- 
-    if(!validaQuantidade(Fruta.Quantidade)){
-        erros.push("A quantidade é inválida!");
-    }
+
     
     if( Fruta.Valor.length == 0){
         erros.push("O valor não pode estar em branco!")

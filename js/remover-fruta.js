@@ -1,4 +1,4 @@
-var Frutas = document.querySelectorAll(".paciente")
+var Frutas = document.querySelectorAll(".fruta")
 
 var tabela = document.querySelector("table");
 

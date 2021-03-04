@@ -10,27 +10,19 @@ for(var i = 0; i < Frutas.length ; i++){
     var tdValor= Fruta.querySelector(".info-Valor");
     var Valor = tdValor.textContent;
     
-
-
     var tdQuantidade = Fruta.querySelector(".info-Quantidade");
     var Quantidade = tdQuantidade.textContent;
 
-
-
+    
+    
     var tdTotal =  Fruta.querySelector(".info-Total");
-
-
-   
-
-
- 
-        var Total = calculaTotal(Valor,Quantidade);
+       
+    var Total = calculaTotal(Valor,Quantidade);
         tdTotal.textContent = Total;
  
     }
 
-
-
+    
 function calculaTotal(Valor,Quantidade){
     var Total = 0;
 
