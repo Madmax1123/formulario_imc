@@ -18,19 +18,24 @@
         <main>
             <section class="container">
                 <h2 style="color: rgba(0, 4, 255, 0.993);">Meus pacientes</h2>
-                <table>
-                    <thead>
-                        <h3 style="color: red;">Atenção!, para remover paciente clique duas vezes em cima do paciente que deseja remover!.</h3>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Peso(kg)</th>
-                            <th>Altura(m)</th>
-                            <th>Gordura Corporal(%)</th>
-                            <th>IMC</th>
-                        </tr>
-                    </thead>
+                <label for="filtrar-tabela">Filtro</label>
+                <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+                
+                 <table>
+                    <h3 style="color: red;">Atenção!, para remover paciente clique duas vezes em cima do paciente que deseja remover!.</h3>
+                
+                        <th>Nome</th>
+                        <th>Peso(kg)</th>
+                        <th>Altura(m)</th>
+                        <th>Gordura Corporal(%)</th>
+                        <th>IMC</th>
+                    
+            </table>
+                <table class="Apagar-tabela">
+                    
                     <tbody class="tabela-pacientes" id="tabela-pacientes"style="color: rgb(0, 255, 0);"></tbody>> 
-                        <tr style="color: rgb(0, 255, 0);"class="paciente" >
+                       
+                    <tr style="color: rgb(0, 255, 0);"class="paciente" >
                             <td class="info-nome">Paulo</td>
                             <td class="info-peso">100</td>
                             <td class="info-altura">2.00</td>
@@ -70,7 +75,8 @@
                         </tr>
                     </tbody>
                 </table>
-
+                <span id="erro-ajax" class="invisivel" style="background-color: red;">Erro ao buscar aos pacientes</span>
+                <button id="buscar-paciente" class="botao bto-principal">Buscar paciente</button>
             </section>
         </main>
         <section class="container">
@@ -102,5 +108,7 @@
         <script src="js/calcula-imc.js" ></script>
         <script src="js/form.js" ></script>
         <script src="/js/remover-paciente.js"></script>
+        <script src="js/filtra.js"></script>
+        <script src="js/buscar-paciente.js"></script>
     </body>
 </html>
